@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Was This Article Helpful?" Plugin Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .highlight {
+            background-color: #ffffcc;
+        }
+        p {
+            color: #666;
+        }
+        a {
+            color: #0c5fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>"Was This Article Helpful?" Plugin Documentation</h1>
+
+    <h2>Introduction</h2>
+    <p>This user guide will assist you in installing, configuring, and using the "Was This Article Helpful?" plugin for your WordPress site. This plugin allows your readers to provide feedback on your articles by voting "Yes" or "No", displaying the results as a percentage.</p>
+
+    <h2>Installation</h2>
+    <p>To install the "Was This Article Helpful?" plugin, follow these steps:</p>
+    <ol>
+        <li>Download the plugin zip file from the WordPress plugin repository or the location provided.</li>
+        <li>Log in to your WordPress dashboard.</li>
+        <li>Navigate to <code>Plugins > Add New</code>.</li>
+        <li>Click on the <code>Upload Plugin</code> button at the top of the page.</li>
+        <li>Choose the downloaded zip file from your computer and click <code>Install Now</code>.</li>
+        <li>After the installation is complete, click <code>Activate Plugin</code>.</li>
+    </ol>
+
+    <h2>Configuration</h2>
+    <p>Once the plugin is activated, it automatically appends the voting buttons to the end of each article. No further configuration is needed for the basic functionality.</p>
+
+    <h2>Usage</h2>
+    <h3>For Visitors</h3>
+    <p>Visitors can vote on articles by clicking the "Yes" or "No" buttons at the end of the content. After they vote, they will see a thank you message and the updated voting percentages. Visitors are prevented from voting multiple times on the same article.</p>
+
+    <h3>For Administrators</h3>
+    <p>Administrators can view voting results for each article directly within the WordPress dashboard:</p>
+    <ol>
+        <li>Navigate to <code>Posts</code> and click on any article to edit.</li>
+        <li>On the right-hand side, you will see a meta box titled "Voting Results" displaying the number of positive and negative votes.</li>
+    </ol>
+
+    <h2>Customization</h2>
+    <p>If you want to customize the look and feel of the voting buttons, you can add custom CSS to your theme.</p>
+    <p>For example, to change the button colors, add the following CSS in <code>Appearance > Customize > Additional CSS</code>:</p>
+    <pre><code>.vote-button {
+    background-color: #your-color; /* Change the background color */
+}
+
+.vote-button.user-voted {
+    border-color: #your-highlight-color; /* Change the border color for voted button */
+}</code></pre>
+
+    <h2>Troubleshooting</h2>
+    <p>If the voting buttons do not appear on your articles:</p>
+    <ul>
+        <li>Make sure the plugin is activated.</li>
+        <li>Clear your website's cache if you're using a caching plugin.</li>
+        <li>Check if your theme's <code>the_content</code> filter is modified, which may prevent the buttons from being appended.</li>
+    </ul>
+    <p>For any further assistance, contact support at <a href="mailto:alicinaroglu@gmail.com">alicinaroglu@gmail.com</a>.</p>
+
+</body
